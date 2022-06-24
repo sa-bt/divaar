@@ -1,0 +1,26 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "test title",
+        "version": "1.0"
+    },
+    "paths": {
+        "/api/test": {
+            "get": {
+                "summary": "test",
+                "operationId": "75ff4b464934f66cddabb35fb8e51e55",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "300": {
+                        "description": "REDIRECTED"
+                    },
+                    "400": {
+                        "description": "NOT OK"
+                    }
+                }
+            }
+        }
+    }
+}

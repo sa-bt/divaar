@@ -217,8 +217,8 @@ return [
     'composer' => [
         'vendor' => 'nwidart',
         'author' => [
-            'name' => 'Nicolas Widart',
-            'email' => 'n.widart@gmail.com',
+            'name' => 'SABT',
+            'email' => 'bakhshian2020@gmail.com',
         ],
         'composer-output' => false,
     ],
@@ -275,3 +275,4 @@ return [
 
     'activator' => 'file',
 ];
+
