@@ -1,0 +1,23 @@
+{
+    "name": "nwidart/otp",
+    "description": "",
+    "authors": [
+        {
+            "name": "SABT",
+            "email": "bakhshian2020@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Otp\\": ""
+        }
+    }
+}
