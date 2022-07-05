@@ -1,5 +1,6 @@
 <?php
 
 return [
-    'name' => 'Otp'
+    'name' => 'Otp',
+    'expiration_code' => 120
 ];

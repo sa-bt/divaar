@@ -1,4 +1,5 @@
 <?php
+
 namespace Modules\Otp\Database\factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -20,9 +21,14 @@ class OtpFactory extends Factory
     public function definition()
     {
         return [
-            "phone_number"=>"09".$this->faker->numerify("#########"),
-            "code"=>$this->faker->numerify("#######")
+            "phone_number" => "09" . $this->faker->numerify("#########"),
+            "code" => $this->faker->numerify("#######")
         ];
+    }
+
+    public function setPhoneNumber(string $phone_number): OtpFactory
+    {
+        return $this->state(["phone_number" => $phone_number]);
     }
 }
 
