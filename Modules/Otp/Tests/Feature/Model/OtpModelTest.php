@@ -71,4 +71,18 @@ class OtpModelTest extends TestCase
         $this->assertDatabaseHas('otps', $data);
         $this->assertDatabaseCount('otps', 1);
     }
+
+    public function test_new_method()
+    {
+        $otp = Otp::new();
+
+        $this->assertInstanceOf(Otp::class, $otp);
+    }
+
+    public function test_unique_code_in_generate_code_method()
+    {
+        $code = Otp::new()->generateCode();
+
+        $this->assertDatabaseMissing('otps', ['code'=> $code]);
+    }
 }
