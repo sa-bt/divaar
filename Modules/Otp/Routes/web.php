@@ -12,5 +12,6 @@
 */
 
 Route::prefix('otp')->as('otp.')->group(function() {
-    Route::post('/login', 'AuthenticateController@login')->name('authenticate.request-otp.post.web');
+    Route::get('/login', 'AuthenticateController@login')->name('authenticate.login.get.web');
+    Route::post('/login', 'AuthenticateController@requestOtp')->name('authenticate.request-otp.post.web');
 });
