@@ -1,11 +1,13 @@
 module.exports = {
   content: [
-      "./resources/**/*.blade.php",
-      "./resources/**/*.js",
-      "./resources/**/*.vue",
+      "./Modules/**/Resources/views/*.blade.php",
+      "./Modules/**/Resources/views/**/*.blade.php",
+      "./Modules/**/Resources/views/**/**/*.blade.php",
   ],
   theme: {
     extend: {},
   },
   plugins: [],
 }
+
+//npx mix watch
